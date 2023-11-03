@@ -37,4 +37,4 @@ class pedidos(models.Model):
         ordering=["numero"]
         verbose_name_plural ="Pedidos"
     def __str__(self):
-        return  (self.numero, self.fecha, self.entregado)
+        return  " %s, %s,%s " %(self.numero, self.fecha, self.entregado)
